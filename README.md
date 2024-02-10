@@ -55,6 +55,12 @@ The failed_rdp txt file will also be uploaded into the log analytics in Azure
 
 We need to parse out the txt file for Country, IP address, Time, Longitude, Latitude, User Name, Password
 
+We can use this KQL Query to sort the data imported through the failed_rdp txt file
+
+https://github.com/cenkcafer/honeypotlab/blob/main/KQL_GeoLocate_Query.kql
+
+Next go to Azure Sentinel>honeypotlab>Workbooks>edit>add a query
+
 
 
 Might add my own custom triggers or alerts later(last updated Feb 10,2024)
