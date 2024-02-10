@@ -43,15 +43,15 @@ Turn off Windows Firewall in Windows VM to allow pings from anywhere
 
 Domain Profile: Off, Public Profile: Off, Private Profile: Off, Apply>OK
 
-Pings should work now since Echo requests are allowed now
-
 Next we need to get an API key from https://ipgeolocation.io/
 
 Copy and paste API key into Powershell script and run the script in the vulnerable Windows VM
 
-The script will look throught the event viewer and check for the failed logons code#4625, it will get the IP address from the failed logon attempt and run it through the IP geolocation API and save it to a txt file 
+The script will look throught the event viewer and check for the failed logons code#4625, it will get the IP address from the failed logon attempt and run it through the IP geolocation API and save it to a txt file, the txt files name is failed_rdp
 
-The failed_rdp txt file will also be uploaded into the log analytics in Azure 
+Next The failed_rdp txt file will also be uploaded into the log analytics in Azure 
+
+Go to Azure>VMs>Create a custom log>Sample log>import failed_rdp>Collection paths Type>Windows, Path>C:\ProgramData\failed_rdp.log, Details>FAILED_RDP_WITH_GEO
 
 We need to parse out the txt file for Country, IP address, Time, Longitude, Latitude, User Name, Password
 
