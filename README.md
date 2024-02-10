@@ -3,8 +3,11 @@ Implementing a SOC and Honeynet in Azure
 
 Project Summary:
 Setting up Azure Sentinel which is a cloud based SIEM(Security Information and Event Management)
+
 Also create a VM in the cloud which will be our Honeypot
+
 We will make the honeypot vulnerable to the internet by taking down Windows Firewall
+
 Then we will monitor and log attacks from different IP addresses from different countries all over the world and then display it on a map
 
 ![image](https://github.com/cenkcafer/honeypotlab/assets/61919465/89c476b6-0389-4b6f-9150-424563a226de)
