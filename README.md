@@ -1,11 +1,11 @@
 # Honeypot Lab
 Implementing a SOC and Honeynet in Azure 
-Could potentially add triggers or alerts 
+
 Project Summary:
 Setting up Azure Sentinel which is a cloud based SIEM(Security Information and Event Management)
 Also create a VM in the cloud which will be our Honeypot
-
-We will make the honeypot vulnerable to the internet by taking down Windows Firewall and then we will monitor and log a lot of attacks from different IP addresses from different countries all over the world and then display it on a map
+We will make the honeypot vulnerable to the internet by taking down Windows Firewall
+Then we will monitor and log attacks from different IP addresses from different countries all over the world and then display it on a map
 
 ![image](https://github.com/cenkcafer/honeypotlab/assets/61919465/89c476b6-0389-4b6f-9150-424563a226de)
 
@@ -31,3 +31,4 @@ Turn off Windows Firewall in Windows VM to allow pings from anywhere
 Domain Profile: Off, Public Profile: Off, Private Profile: Off, Apply>OK
 Pings should work now since Echo requests are allowed now
 
+Might add my own custom triggers or alerts later(last updated Feb 10,2024)
