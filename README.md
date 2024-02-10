@@ -55,6 +55,8 @@ Go to Azure>VMs>Create a custom log>Sample log>import failed_rdp>Collection path
 
 We need to parse out the txt file for Country, IP address, Time, Longitude, Latitude, User Name, Password
 
+
+
 We can use this KQL Query to sort the data imported through the failed_rdp txt file
 
 https://github.com/cenkcafer/honeypotlab/blob/main/KQL_GeoLocate_Query.kql
