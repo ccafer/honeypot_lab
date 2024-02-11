@@ -53,15 +53,21 @@ Next The failed_rdp txt file will also be uploaded into the log analytics in Azu
 
 Go to Azure>VMs>Create a custom log>Sample log>import failed_rdp>Collection paths Type>Windows, Path>C:\ProgramData\failed_rdp.log, Details>FAILED_RDP_WITH_GEO
 
+![image](https://github.com/ccafer/honeypotlab/assets/61919465/10c05ae8-fafc-4e96-9045-0a17fbfe9fb7)
+
+
 We need to parse out the txt file for Country, IP address, Time, Longitude, Latitude, User Name, Password
-
-
 
 We can use this KQL Query to sort the data imported through the failed_rdp txt file
 
 https://github.com/cenkcafer/honeypotlab/blob/main/KQL_GeoLocate_Query.kql
 
 Next go to Azure Sentinel>honeypotlab>Workbooks>edit>add a query
+![image](https://github.com/ccafer/honeypotlab/assets/61919465/04355661-a3c3-4654-9103-9be170df3a69)
+
+![image](https://github.com/ccafer/honeypotlab/assets/61919465/70a700f6-2d7b-4e51-861c-d991aed4930f)
+
+![image](https://github.com/ccafer/honeypotlab/assets/61919465/6919bc02-b1f0-4164-b629-5d4a7e098a5b)
 
 
 
